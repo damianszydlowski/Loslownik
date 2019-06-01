@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Ustawienia</string>
+    <string name="search_hint">Szukaj</string>
+    <string name="search_button">Jakiego słowa szukasz?</string>
+    <string name="word_of_day">Słowo dnia</string>
+    <string name="word_of_day_downloading">Pobieranie...</string>
+    <string name="bad_word_error">Nieprawidłowe słowo</string>
+    <string name="no_word_error">Najpierw podaj słowo.</string>
+    <string name="saving_in_db">Pobrano z API i zapisano w BD</string>
+    <string name="recent_words">Ostatnio wybierane</string>
+    <string name="cannot_translate">Nie udało się rozpakować tłumaczenia.</string>
+    <string name="not_found_Oxford">Nie znaleziono w słowniku Oxford.</string>
+    <string name="not_found_Pons">Nie znaleziono w tłumaczu Pons.</string>
+    <string name="not_found_Wordnik">Nie znaleziono w bazie Wordnik.</string>
+    <string name="getting_recent">Ładowanie...</string>
+    <string name="getting_random_word">Pobieranie losowego słowa...</string>
+    <string name="downloaded_from_db">Odczytano z lokalnej BD.</string>
+    <string name="cannot_translate_wrong_region">Tłumacz nie zna tego słowa. Spróbuj wpisać brytyjską wersję zamiast amerykańskiej, n.p. \"colour\" zamiast \"color\".</string>
+</resources>
