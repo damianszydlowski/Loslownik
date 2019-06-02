@@ -25,14 +25,14 @@ public class GetRandomWord extends AsyncTask<String, Integer, String> {
     protected String doInBackground(String... params) {
         try {
             URL url1 = new URL(urlBuilder());
-            HttpsURLConnection con1 = (HttpsURLConnection) url1.openConnection();
-            BufferedReader reader1  = new BufferedReader(new InputStreamReader(con1.getInputStream()));
-            StringBuilder stringBuilder1 = new StringBuilder();
-            String line1 = null;
-            while ((line1 = reader1.readLine()) != null) {
-                stringBuilder1.append(line1 + "\n");
+            HttpsURLConnection con = (HttpsURLConnection) url1.openConnection();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                stringBuilder.append(line + "\n");
             }
-            return stringBuilder1.toString();
+            return stringBuilder.toString();
         } catch (Exception e) {
             e.printStackTrace();
             return e.toString();
@@ -56,6 +56,9 @@ public class GetRandomWord extends AsyncTask<String, Integer, String> {
 
     private String urlBuilder(){
         final String api_key = "3e7cda96325000311c00b09d82b059a61b0cd2e5d1ebfd831";
-        return "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&excludePartOfSpeech=noun-plural&minCorpusCount=100&maxCorpusCount=-1&minDictionaryCount=3&maxDictionaryCount=-1&minLength=5&maxLength=-1&api_key=" + api_key;
+        return "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true" +
+                "&includePartOfSpeech=noun&excludePartOfSpeech=noun-plural&minCorpusCount=100" +
+                "&maxCorpusCount=-1&minDictionaryCount=3&maxDictionaryCount=-1&minLength=5" +
+                "&maxLength=-1&api_key=" + api_key;
     }
 }

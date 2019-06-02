@@ -15,8 +15,8 @@ public class RecentWordsAdapter extends RecyclerView.Adapter<RecentWordsAdapter.
     private Context mCtx;
     private List<Word> wordList;
 
-    public RecentWordsAdapter(Context mCtx, List<Word> wordList) {
-        this.mCtx = mCtx;
+    public RecentWordsAdapter(Context context, List<Word> wordList) {
+        this.mCtx = context;
         this.wordList = wordList;
     }
 

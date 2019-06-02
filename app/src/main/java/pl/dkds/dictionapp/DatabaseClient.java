@@ -5,27 +5,28 @@ import android.content.Context;
 
 public class DatabaseClient {
 
-    private Context mCtx;
-    private static DatabaseClient mInstance;
+    private Context context;
+    private static DatabaseClient instance;
 
     //our app database object
     private AppDatabase appDatabase;
 
-    private DatabaseClient(Context mCtx) {
-        this.mCtx = mCtx;
+    private DatabaseClient(Context context) {
+        this.context = context;
 
         //creating the app database with Room database builder
-        appDatabase = Room.databaseBuilder(mCtx, AppDatabase.class, "word").build();
+        appDatabase = Room.databaseBuilder(context, AppDatabase.class, "word").build();
     }
 
-    public static synchronized DatabaseClient getInstance(Context mCtx) {
-        if (mInstance == null) {
-            mInstance = new DatabaseClient(mCtx);
+    public static synchronized DatabaseClient getInstance(Context context) {
+        if (instance == null) {
+            instance = new DatabaseClient(context);
         }
-        return mInstance;
+        return instance;
     }
 
     public AppDatabase getAppDatabase() {
         return appDatabase;
     }
 }
+
