@@ -12,17 +12,17 @@ import java.util.List;
 
 public class RecentWordsAdapter extends RecyclerView.Adapter<RecentWordsAdapter.WordViewHolder> {
 
-    private Context mCtx;
+    private Context context;
     private List<Word> wordList;
 
     public RecentWordsAdapter(Context context, List<Word> wordList) {
-        this.mCtx = context;
+        this.context = context;
         this.wordList = wordList;
     }
 
     @Override
     public WordViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mCtx).inflate(R.layout.recent_words, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.recent_words, parent, false);
         return new WordViewHolder(view);
     }
 
@@ -54,10 +54,10 @@ public class RecentWordsAdapter extends RecyclerView.Adapter<RecentWordsAdapter.
         public void onClick(View view) {
             Word word = wordList.get(getAdapterPosition());
 
-            Intent intent = new Intent(mCtx, WordViewActivity.class);
+            Intent intent = new Intent(context, WordViewActivity.class);
             intent.putExtra("GIVEN_WORD", word.getWord());
 
-            mCtx.startActivity(intent);
+            context.startActivity(intent);
         }
     }
 }
