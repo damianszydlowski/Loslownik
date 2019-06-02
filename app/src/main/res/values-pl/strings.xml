@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Ustawienia</string>
     <string name="search_hint">Szukaj</string>
     <string name="search_button">Jakiego słowa szukasz?</string>
     <string name="word_of_day">Słowo dnia</string>

@@ -8,9 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 public class WordViewActivity extends AppCompatActivity {
-
-    String oxfordDefUrl;
-    String ponsTransUrl;
     String givenWord;
     int exists;
 
