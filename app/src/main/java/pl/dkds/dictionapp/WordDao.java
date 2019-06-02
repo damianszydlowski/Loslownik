@@ -30,8 +30,4 @@ public interface WordDao {
 
     @Update
     void update(Word word);
-
-
-
-
 }

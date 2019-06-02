@@ -17,4 +17,7 @@
     <string name="getting_random_word">Pobieranie losowego słowa...</string>
     <string name="downloaded_from_db">Odczytano z lokalnej BD.</string>
     <string name="cannot_translate_wrong_region">Tłumacz nie zna tego słowa. Spróbuj wpisać brytyjską wersję zamiast amerykańskiej, n.p. \"colour\" zamiast \"color\".</string>
+    <string name="definition_title">Definicja</string>
+    <string name="translation_title">Tłumaczenie</string>
+    <string name="example_title">Przykładowe zdanie</string>
 </resources>
