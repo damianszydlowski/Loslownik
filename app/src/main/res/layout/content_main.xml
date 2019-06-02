@@ -80,7 +80,7 @@
         android:layout_marginEnd="16dp"
         android:clickable="true"
         android:onClick="perform_action"
-        android:text="@string/word_of_day_downloading"
+        android:text="@string/downloading_text"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toEndOf="parent"

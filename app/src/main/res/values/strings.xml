@@ -4,7 +4,7 @@
     <string name="search_hint">Search</string>
     <string name="search_button">Which word you\'re looking for?</string>
     <string name="word_of_day">Word of the day</string>
-    <string name="word_of_day_downloading">Downloading...</string>
+    <string name="downloading_text">Downloading...</string>
     <string name="bad_word_error">Not a valid word</string>
     <string name="title_activity_word_view">WordViewActivity</string>
     <string name="no_word_error">You have to input word first</string>

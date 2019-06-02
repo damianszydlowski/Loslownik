@@ -4,7 +4,7 @@
     <string name="search_hint">Szukaj</string>
     <string name="search_button">Jakiego słowa szukasz?</string>
     <string name="word_of_day">Słowo dnia</string>
-    <string name="word_of_day_downloading">Pobieranie...</string>
+    <string name="downloading_text">Pobieranie...</string>
     <string name="bad_word_error">Nieprawidłowe słowo</string>
     <string name="no_word_error">Najpierw podaj słowo.</string>
     <string name="saving_in_db">Pobrano z API i zapisano w BD</string>
